@@ -1,0 +1,25 @@
+### call Countries
+GET http://localhost:4004/odata/v4/fair-price/Countries
+
+### call SKU_Details
+GET http://localhost:4004/odata/v4/fair-price/SKU_Details
+
+
+
+### call listToString
+POST http://localhost:4004/odata/v4/fair-price/SKU_Details
+Content-Type: application/json
+
+{
+      "ClassId": 4,
+      "EAN": "EANDESC",
+      "SKU": "SKU4",
+      "PLU": "PLU4",
+      "Brand": "FAIRPRICE",
+      "Itemdescription": "NUTS",
+      "CountryOfOrigin_code": "IND",
+      "ChineseText": "NUTS",
+      "TotalRSP": 4,
+      "Image": null,
+      "UOM": "PACK"
+    }
