@@ -23,3 +23,36 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+
+
+## To set up git repo 
+
+
+1. Initialization of GIT
+git init
+ 
+2. Set Remote Origin URL
+git remote set-url origin https://xxxxxx/RepoName.git
+ 
+3. To update current repository
+git remote -v
+ 
+4.Staging the Changes of Project
+git add -A
+ 
+5.Commit your changes
+git commit -m "GIT Comment"
+ 
+6.checkout master branch
+git checkout -b master
+ 
+7.Push your changes into GIT
+git push origin master
+ 
+8.Pull your latest changes from GIT
+git pull origin master
+
+
+## Reference tutorial 
+https://developers.sap.com/group.hana-cloud-cap-setup.html
+
