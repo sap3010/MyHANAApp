@@ -43,11 +43,6 @@ modules:
   - name: MyHANAApp-dev
     properties:
       TARGET_CONTAINER: ~{hdi-container-name}
-  - name: cross-container-service-1
-    group: SERVICE_REPLACEMENTS
-    properties:
-      key: ServiceName_1
-      service: ~{the-service-name}
   parameters:
     buildpack: nodejs_buildpack
 resources:
@@ -67,12 +62,6 @@ resources:
     service-plan: hdi-shared
   properties:
     hdi-container-name: ${service-name}
-- name: cross-container-service-1
-  type: org.cloudfoundry.existing-service
-  parameters:
-    service-name: CC_ACCESS
-  properties:
-    the-service-name: ${service-name}
 parameters:
   enable-parallel-deployments: true
 build-parameters:
